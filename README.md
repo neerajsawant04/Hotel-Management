@@ -28,9 +28,14 @@ Technologies Used
 
  
 <img width="1440" alt="Screenshot 2024-10-21 at 3 20 19 AM" src="https://github.com/user-attachments/assets/a926496a-f299-476b-9fe3-268e9c3b57b4">
+
+
 <img width="1440" alt="Screenshot 2024-10-21 at 3 20 47 AM" src="https://github.com/user-attachments/assets/49ff4cd7-77b2-475c-818f-79343c379e23">
 
+
 <img width="1440" alt="Screenshot 2024-10-21 at 3 20 56 AM" src="https://github.com/user-attachments/assets/bfdea8a9-7101-492a-bb46-f218a4095f1d">
+
+
 <img width="1439" alt="Screenshot 2024-10-21 at 3 21 05 AM" src="https://github.com/user-attachments/assets/42a45d22-a569-4ab7-823c-146dcdae5084">
 
 
