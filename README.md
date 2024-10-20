@@ -1,4 +1,4 @@
-<img width="1440" alt="Screenshot 2024-10-21 at 3 20 56 AM" src="https://github.com/user-attachments/assets/e7119656-7d1e-4090-b96f-f7ab3db745b9"># Bhagat-Tarachand-Hotel
+
 Bhagat Tarachand Online Restaurant System
 
 Overview
