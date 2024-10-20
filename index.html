@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhagat Tarachand</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .header {
+            background-color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            max-width: 150px;
+            transition: transform 0.3s ease;
+        }
+        .logo:hover {
+            transform: scale(1.05);
+        }
+        .nav {
+            background-color: #4a4a4a;
+            padding: 15px 0;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .nav a:hover {
+            color: #ffd700;
+        }
+        
+        /* Modify Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    border-radius: 0; /* Remove border-radius for full width */
+    margin: 0; /* Remove margin for full width */
+    width: 100vw; /* Ensure it covers the entire viewport width */
+    height: auto;
+    max-width: none; /* Disable the max-width limit */
+    box-shadow: none; /* Remove box-shadow if you don't want it on the full-screen image */
+}
+
+.hero img {
+    width: 100%; /* Full width of the viewport */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure image covers the hero section properly */
+    transition: transform 0.5s ease;
+}
+
+/* The rest of your CSS remains the same */
+        .hero:hover img {
+            transform: scale(1.05);
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #4a4a4a;
+            border-bottom: 2px solid #ffd700;
+            padding-bottom: 10px;
+        }
+        .menu-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .menu-column {
+            width: 48%;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .signatures {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .signature-item {
+            width: 48%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .signature-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .signature-item img:hover {
+            transform: scale(1.03);
+        }
+        .locations {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .location-item {
+            width: 30%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .location-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .location-item img:hover {
+            transform: scale(1.03);
+        }
+        .location-item button {
+            background-color: #4a4a4a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .location-item button:hover {
+            background-color: #ffd700;
+            color: #4a4a4a;
+        }
+        .contact {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .social-media, .visit-us {
+            width: 48%;
+        }
+        .social-media img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .footer {
+            background-color: #4a4a4a;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .menu-column, .signature-item, .location-item, .social-media, .visit-us {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://bhagattarachand.com/core/uploads/2018/08/expanded_logo.jpg" alt="Bhagat Tarachand Logo" class="logo">
+    </header>
+    <nav class="nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#menu">MENU</a>
+        <a href="#signatures">BBT SIGNATURES</a>
+        <a href="#locations">LOCATIONS</a>
+        <a href="#contact">CONTACT US</a>
+    </nav>
+    <div class="hero">
+        <img src="https://wallpapers.com/images/hd/butter-chicken-in-clay-pot-j9gpbubkr1i0vy38.jpg" alt="Bhagat Tarachand Hero">
+        <div class="hero-text">Bhagat Tarachand</div>
+    </div>
+    <div class="content">
+        <section id="about">
+            <h2>Our Story</h2>
+            <p>B. Bhagat Tarachand (BBT), a beloved vegetarian restaurant chain, started as a small stall in Karachi in 1895 and has now spread across Mumbai, offering authentic home-style food. Despite its growth, BBT has retained its commitment to quality and freshness, with dishes prepared twice daily using the same raw materials as those used at home. Known for its unique Punjabi and Sindhi cuisine, favorites include handi chaas, sumptuous dal fry, buttery soft phulkas, and the famous 'kutchi beer' (chaas in beer bottles). BBT's Zaveri Bazaar branch, a hub for traders and businessmen, remains a cherished destination for traditional, freshly-cooked meals.</p>
+        </section>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="menu-section">
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <h3>THALI</h3>
+                        <h4>Spl Thali(Limited, No Sharing)</h4>
+                        <p>(3 Spl Chapati, Dal Fry, Veg Subji, Paneer Subji, Rice, Papad, Chaas Glass, Sweet)</p>
+                    </div>
+                </div>
+                <div class="menu-column">
+                    <div class="menu-item">
+                        <h3>RICE PEARLS</h3>
+                        <h4>Plain Basmati Rice</h4>
+                        <h4>Jeera Rice</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="signatures">
+            <h2>BBT Signatures</h2>
+            <div class="signatures">
+                <div class="signature-item">
+                    <img src="https://media.istockphoto.com/id/1170374719/photo/dal-makhani-at-dark-background.jpg?s=612x612&w=0&k=20&c=49yLaUAE2apakVk2AAiRQimZd98WtSjIQ0hzCzWsmns=" alt="Dal Fry">
+                    <h3>Dal Fry</h3>
+                </div>
+                <div class="signature-item">
+                    <img src="https://img.freepik.com/premium-photo/chapati-tava-roti-also-known-as-indian-bread-fulka-phulka_974629-32018.jpg" alt="Phulka">
+                    <h3>Phulka</h3>
+                </div>
+                <div class="signature-item">
+                    <img src="https://thumbs.dreamstime.com/b/paneer-butter-masala-curry-popular-indian-dish-generative-ai-high-quality-photo-318630819.jpg" alt="Panner Butter Masala">
+                    <h3>Panner Butter Masala</h3>
+                </div>
+                <div class="signature-item">
+                    <img src="https://t4.ftcdn.net/jpg/05/80/83/11/360_F_580831163_gHJgKLXz4TxnZRSnVpdi779YnI6Vk0FL.jpg" alt="Biryani">
+                    <h3>Biryani</h3>
+                </div>
+                <div class="signature-item">
+                    <img src="https://img.freepik.com/free-photo/top-view-pakistani-meal-arrangement_23-2148825100.jpg" alt="Naan">
+                    <h3>Naan</h3>
+                </div>
+                <div class="signature-item">
+                    <img src="https://wallpapers.com/images/hd/fried-rice-with-soy-sauce-fhxhhubyavznfbm4.jpg" alt="Fried Rice">
+                    <h3>Fried Rice</h3>
+                </div>
+            </div>
+        </section>
+        <section id="locations">
+            <h2>Locations</h2>
+            <div class="locations">
+                <div class="location-item">
+                    <img src="https://bhagattarachand.com/core/uploads/2024/02/BBT-Mumbai.png" alt="BBT Mumbai">
+                    <h3>BBT Mumbai</h3>
+                    <button>DETAILS</button>
+                    <button>LOCATE ME</button>
+                </div>
+                <div class="location-item">
+                    <img src="https://bhagattarachand.com/core/uploads/2018/07/pydhonie.jpg" alt="BBT Pydhonie">
+                    <h3>BBT Pydhonie</h3>
+                    <button>DETAILS</button>
+                    <button>LOCATE ME</button>
+                </div>
+                <div class="location-item">
+                    <img src="https://bhagattarachand.com/core/uploads/2018/10/bbt_vashi_sec_12.jpg" alt="BBT Vashi">
+                    <h3>BBT Vashi</h3>
+                    <button>DETAILS</button>
+                    <button>LOCATE ME</button>
+                </div>
+
+                
+
+
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="contact">
+                <div class="social-media">
+                    <h3>Follow Us on Social Media</h3>
+                    <img src="https://cdn.prod.website-files.com/66997e96fa2595f5ecfc86a3/66abd082621247cfce2b7234_Choosing%20The%20Right%20Social%20Media%20Platform%20For%20Your%20Business_%208%20Things%20To%20Consider.png" alt="Social Media">
+                </div>
+                <div class="visit-us">
+                    <h3>Visit Us</h3>
+                    <p>With the resounding success of the Zaveri Bazaar restaurant, we expanded to other parts of Mumbai and beyond and are now located in Pydhonie, Mulund, Inorbit mall Vashi, Inorbit Mall Malad, Vashi- Sector 12, Viviana Mall in Thane and R city mall in Ghatkopar.</p>
+                    <p>Mumbadevi Commercial Center, 69/75 Zaveri Bazaar, Mumbai - 400002</p>
+                    <p>+91-22-22429393/9494</p>
+                    <p>bbhagattarachand@yahoo.co.in</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Bhagat Tarachand. All rights reserved.</p>
+    </footer>
+</body>
+</html>
