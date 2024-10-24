@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bhagat Tarachand Hotel</title>
+    <title>Bhagat Tarachand</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
@@ -20,7 +20,7 @@
     </nav>
     <div class="hero">
         <img src="https://wallpapers.com/images/hd/butter-chicken-in-clay-pot-j9gpbubkr1i0vy38.jpg" alt="Bhagat Tarachand Hero">
-        <div class="hero-text">Bhagat Tarachand Hotel</div>
+        <div class="hero-text">Bhagat Tarachand</div>
     </div>
     <div class="content">
         <section id="about">
@@ -52,29 +52,43 @@
                 <div class="signature-item">
                     <img src="https://media.istockphoto.com/id/1170374719/photo/dal-makhani-at-dark-background.jpg?s=612x612&w=0&k=20&c=49yLaUAE2apakVk2AAiRQimZd98WtSjIQ0hzCzWsmns=" alt="Dal Fry">
                     <h3>Dal Fry</h3>
+                    <h4>Rs 190</h4>
+                    <a href="javascript:void(0);" class="place-order" onclick="placeOrder('Dal Fry', 190)">Place Order</a>
                 </div>
                 <div class="signature-item">
                     <img src="https://img.freepik.com/premium-photo/chapati-tava-roti-also-known-as-indian-bread-fulka-phulka_974629-32018.jpg" alt="Phulka">
                     <h3>Phulka</h3>
+                    <h4>Rs 60</h4>
+                    <a href="javascript:void(0);" class="place-order" onclick="placeOrder('Phulka', 60)">Place Order</a>
                 </div>
                 <div class="signature-item">
                     <img src="https://thumbs.dreamstime.com/b/paneer-butter-masala-curry-popular-indian-dish-generative-ai-high-quality-photo-318630819.jpg" alt="Paneer Butter Masala">
                     <h3>Paneer Butter Masala</h3>
+                    <h4>Rs 429</h4>
+                    <a href="javascript:void(0);" class="place-order" onclick="placeOrder('Paneer Butter Masala', 429)">Place Order</a>
                 </div>
                 <div class="signature-item">
                     <img src="https://t4.ftcdn.net/jpg/05/80/83/11/360_F_580831163_gHJgKLXz4TxnZRSnVpdi779YnI6Vk0FL.jpg" alt="Biryani">
                     <h3>Biryani</h3>
+                    <h4>Rs 630</h4>
+                    <a href="javascript:void(0);" class="place-order" onclick="placeOrder('Biryani', 630)">Place Order</a>
                 </div>
                 <div class="signature-item">
                     <img src="https://img.freepik.com/free-photo/top-view-pakistani-meal-arrangement_23-2148825100.jpg" alt="Naan">
                     <h3>Naan</h3>
+                    <h4>Rs 40</h4>
+                    <a href="javascript:void(0);" class="place-order" onclick="placeOrder('Naan', 40)">Place Order</a>
                 </div>
                 <div class="signature-item">
                     <img src="https://wallpapers.com/images/hd/fried-rice-with-soy-sauce-fhxhhubyavznfbm4.jpg" alt="Fried Rice">
                     <h3>Fried Rice</h3>
+                    <h4>Rs 210</h4>
+                    <a href="javascript:void(0);" class="place-order" onclick="placeOrder('Fried Rice', 210)">Place Order</a>
                 </div>
             </div>
         </section>
+        
+    
         <section id="locations">
             <h2>Locations</h2>
             <div class="locations">
@@ -118,5 +132,15 @@
     <footer class="footer">
         <p>&copy; 2024 Bhagat Tarachand. All rights reserved.</p>
     </footer>
+    <script>
+        function placeOrder(item, price) {
+            const confirmation = confirm(`Are you sure you want to order ${item} for Rs ${price}?`);
+            if (confirmation) {
+                // Here you can add functionality to actually place the order, 
+                // such as sending it to a server or updating a shopping cart.
+                alert(`Order placed for ${item} at Rs ${price}.`);
+            }
+        }
+        </script>
 </body>
 </html>
