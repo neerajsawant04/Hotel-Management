@@ -204,3 +204,24 @@ h2 {
         width: 100%;
     }
 }
+
+.place-order {
+    display: inline-block; /* Ensure the button respects padding and width */
+    padding: 15px 30px; /* Add padding for a larger clickable area */
+    background-color: #ffd700; /* Set the background color */
+    color: #4a4a4a; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    font-size: 1.2em; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.place-order:hover {
+    background-color: #4a4a4a; /* Change background on hover */
+    color: #ffd700; /* Change text color on hover */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
